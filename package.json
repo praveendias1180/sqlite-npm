@@ -12,6 +12,7 @@
   "author": "Praveen Dias",
   "license": "MIT",
   "dependencies": {
+    "sqlite": "^4.0.25",
     "sqlite3": "^5.0.2"
   }
 }
