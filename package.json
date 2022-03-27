@@ -10,5 +10,8 @@
     "rangequest"
   ],
   "author": "Praveen Dias",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
 }
