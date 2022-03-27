@@ -26,6 +26,14 @@ open({
     const insert_sql = 'INSERT INTO `followed` (`pk`, `username`, `followed_time`) VALUES (?,?,?)';
     let insert_result = await db.run(insert_sql, [ 323432423423, 'HelloWorld', followed_time, ]);
     console.log(insert_result);
+
+    /**
+     * Select Data
+     */
+    const select_result = await db.get('SELECT pk, username, followed_time, unfollowed_time FROM followed WHERE username = ?', 'HelloWorld')
+    console.log(select_result);
+    const select_result2 = await db.get('SELECT pk, username, followed_time, unfollowed_time FROM followed WHERE username = ?', 'HHelloWorld')
+    console.log(select_result2);
   })
   .catch((e) => {
     console.log(e);
